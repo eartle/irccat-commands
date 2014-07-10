@@ -30,6 +30,6 @@ if root.xpath("/queryresult")[0].attrib['success'] == 'true':
     possible_answers = ('Current result', 'Response', 'Result')
     answer = find_node(root, possible_answers)
 
-    print "%s: %s = %s" % (user, question, answer)
+    print "%s: %s = %s" % (user, question, answer),
 else:
-    print "%s: Sorry, I don't understand the question" % user
+    print "%s: Sorry, I don't understand the question" % user,
