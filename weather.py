@@ -3,7 +3,7 @@ import requests
 import json
 from pprint import pprint
 
-response = requests.get('https://api.forecast.io/forecast/5e2226c786c32cbfcd925a75f52f9494/51.531801,-0.060318?units=uk')
+response = requests.get('https://api.forecast.io/forecast/5e2226c786c32cbfcd925a75f52f9494/51.5031221,-0.0974548?units=uk')
 data = json.loads(response.content)
 
 #pprint(data)
